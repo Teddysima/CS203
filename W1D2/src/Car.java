@@ -11,8 +11,8 @@ public class Car {
 	Car(int x, int y) {
 		this.x = x;
 		this.y = y;
-	}*/
-	
+	}
+	*/
 	public int getX() {
 		return x;
 	}
@@ -29,11 +29,11 @@ public class Car {
 	}
 
 	public void MoveUp(){
-		y += 1;
+		this.y += 1;
 	}
 	
 	public void MoveLeft(){
-		this.x += 1;
+		this.x -= 2;
 	}
 	
 	public void MoveDown(){
@@ -44,7 +44,7 @@ public class Car {
 		this.x += 1;
 	}
 	public void PrintLocation(){
-		System.out.println("(" + this.x + "," + this.y + ")");
+		System.out.println( "(" + this.x + "," + this.y + ")");
 		
 	}
 

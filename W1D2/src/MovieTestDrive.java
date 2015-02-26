@@ -11,6 +11,7 @@ public class MovieTestDrive {
 		two.title = "Lost in cubicle space";
 		two.genre = "Comedy";
 		two.rating = 5;
+		two.playIt();
 		
 		Movie three = new Movie();
 		three.title = "Byte Club";
