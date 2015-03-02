@@ -25,12 +25,3 @@ public class TestDriverGuSc {
 }
 		
 		
-		//System.out.println(s.changeThis(y,g.getName() ));
-		
-		
-		
-
-
-//public void changeThis(int subjectA, GuineaPig subjectB){
-	//subjectA = 10;
-	//subjectB.setName("Teddy");

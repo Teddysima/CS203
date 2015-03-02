@@ -1,6 +1,7 @@
+
 import java.util.Scanner;
 
-public class Player {
+public class playerG {
 	int number = 0;
 	int number1 = 0;
 	int number2 = 0;

@@ -1,15 +1,13 @@
 
-
-
-public class GuessGame1 {
-	Player p1;
-	Player p2;
-	Player p3;
+public class GuessGame {
+	playerG p1;
+	playerG p2;
+	playerG p3;
 	
 	public void startGame(){
-		p1 = new Player();
-		p2 = new Player();
-		p3 = new Player();
+		p1 = new playerG ();
+		p2 = new playerG ();
+		p3 = new playerG ();
 		
 		int guessp1 = 0;
 		int guessp2 = 0;
@@ -26,16 +24,16 @@ public class GuessGame1 {
 			System.out.println("number to guess is " + targetNumber );
 			
 			p1.guess();
-			p2.guess();
-			p3.guess();
+//			p2.guess();
+//			p3.guess();
 			
 			guessp1 = p1.number;
 			System.out.println("player one guessed " + guessp1);
 			
-			guessp2 = p2.number1;
+			guessp2 = p1.number1;
 			System.out.println("player two guessed " + guessp2);
 			
-			guessp3 = p3.number2;
+			guessp3 = p1.number2;
 			
 			System.out.println("player Three guessed " + guessp3);
 			
@@ -66,4 +64,3 @@ public class GuessGame1 {
 	}
 }
 	
-
