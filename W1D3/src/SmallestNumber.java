@@ -3,7 +3,9 @@ public class SmallestNumber {
 
 	public static void main(String[] args) {
 		
-		double [] nums = new double[10];
+		double [] nums = new double[10];//Integer.parseInt(args[0]) ];
+		
+		//System.out.println("Size = " + args[0]);
 		
 		for (int i = 0; i < nums.length; i++){
 			double rand1 = (Math.random()*10);
