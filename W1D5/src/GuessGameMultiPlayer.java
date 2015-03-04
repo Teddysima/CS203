@@ -1,4 +1,3 @@
-
 public class GuessGameMultiPlayer {
 	MultiPlayer player;
 
