@@ -5,7 +5,7 @@ public class Automobile {
 	private String Model;
 	private int year;
 	private String color;
-	private int speed;
+	protected int speed;
 	
 	public int getSpeed() {
 		return speed;

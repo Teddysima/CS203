@@ -19,6 +19,10 @@ public class Truck extends Automobile {
 	}
 
 	public void accelerate() {
-			setSpeed(7);
+		this.speed = this.speed + 7
+				
+				;
+		
+		//this.setSpeed( this.getSpeed() + 7);
 	}
 }

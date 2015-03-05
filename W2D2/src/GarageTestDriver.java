@@ -6,6 +6,7 @@ public class GarageTestDriver {
 		Car c1 = new Car();		
 		c1.setTrunkCapacity(2);
 		Truck t1 = new Truck();
+		t1.setCarryingCapacity(89);
 		Item i1 = new Item();
 		i1.setName("Toyota");
 		Item i2 = new Item();
@@ -26,7 +27,9 @@ public class GarageTestDriver {
 		System.out.println(g1.retrieve(1).getName());
 		System.out.println(g1.retrieve(2).getName());
 		System.out.println(c1.getTrunkCapacity());	
-
+		System.out.println(t1.getCarryingCapacity());
+		
+		
 	
 		
 		

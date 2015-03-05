@@ -20,7 +20,9 @@ public class Car extends Automobile {
 		this.trunkCapacity = trunkCapacity;
 	}
 	public void accelerate() {
-		setSpeed(20);
+		this.speed = this.speed + 12;
+		
+		//this.setSpeed( this.getSpeed() + 12);
 		
 	}
 
