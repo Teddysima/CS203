@@ -4,6 +4,29 @@ public class StaticCar {
 	private String name;
 	public String location;
 
+	// public static String company = "BMW";
+
+	StaticCar(int x, int y, String name, String location) {
+		this(x, y, name);
+		this.location = location;
+
+	}
+
+	StaticCar(int x, int y, String name) {
+		this(x, y);
+		this.name = name;
+		this.location = location;
+
+	}
+
+	StaticCar(int x, int y) {
+		this.x = x;
+		this.y = y;
+		this.name = name;
+		this.location = location;
+
+	}
+
 	public static String getLocation(StaticCar This) {
 		return This.location;
 	}
@@ -55,4 +78,5 @@ public class StaticCar {
 		This.x = This.x - x;
 		return This.x;
 	}
+
 }

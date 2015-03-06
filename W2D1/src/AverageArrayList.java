@@ -7,6 +7,7 @@ public class AverageArrayList {
 		
 		ArrayList<Integer> ints = new ArrayList<Integer> ();
 		
+		
 		for (int i = 0; i < 100; i++){
 			int rand = (int)(Math.random()*100);
 			
@@ -16,9 +17,11 @@ public class AverageArrayList {
 		int sum = 0;
 		for (int i = 0; i < ints.size();i++){
 			sum+=ints.get(i);
+			
 		}
-		
-		System.out.println((sum)/(100));	
+		ints.add(sum);
+		System.out.println((sum)/(100));
+		System.out.println(ints.indexOf(sum));
 	}
 
 
