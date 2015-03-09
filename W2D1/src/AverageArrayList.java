@@ -19,10 +19,10 @@ public class AverageArrayList {
 			sum+=ints.get(i);
 			
 		}
-		ints.add(sum);
-		System.out.println((sum)/(100));
-		System.out.println(ints.indexOf(sum));
-	}
+		//ints.add(sum);
+		System.out.println((sum)/(ints.size()));
+		
 
 
+}
 }
