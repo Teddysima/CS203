@@ -1,5 +1,6 @@
 
 import javax.sound.midi.*;
+
 public class MiniMusicPlayer1 {
 	public static void main(String[] args){
 		try{

@@ -22,7 +22,7 @@ public class Gui1 {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500, 300);
 
-		this.goodbyeButton = new JButton("Good Bye");
+		goodbyeButton = new JButton("Good Bye");
 		frame.getContentPane().add(BorderLayout.SOUTH, goodbyeButton);
 		goodbyeButton.addActionListener(new GoodbyeListener());
 
@@ -48,7 +48,7 @@ public class Gui1 {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			label.setText("Good Bye");
+			System.out.println("Good Bye");
 		}
 	}
 

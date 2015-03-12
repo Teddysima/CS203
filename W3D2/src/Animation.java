@@ -14,6 +14,7 @@ public class Animation {
 	private int x = 0;
 	private int y = 0;
 	private boolean up;
+	
 	private boolean down;
 	private boolean left;
 	private boolean right;
@@ -30,18 +31,19 @@ public class Animation {
 
 		DrawPanel d = new DrawPanel();
 		frame.getContentPane().add(CENTER, d);
-		frame.getContentPane().addKeyListener(new MykeyListener());
+		//FIXME
+		frame.addKeyListener(new MykeyListener());
 
 		frame.setSize(300, 300);
 		frame.setVisible(true);
 
 		while (true) {
-			if (up) {
+			if (up && y > 0) {
 				y -= 1;
 			} else if (down) {
 				y += 1;
 			}
-			if (left) {
+			if (left && x > 0) {
 				x -= 1;
 			} else if (right) {
 				x += 1;
@@ -73,7 +75,7 @@ public class Animation {
 			}
 		}
 
-		public void keyRelesed(KeyEvent ke) {
+		public void keyReleased1(KeyEvent ke) {
 
 			if (ke.getKeyCode() == KeyEvent.VK_UP) {
 				up = false;
