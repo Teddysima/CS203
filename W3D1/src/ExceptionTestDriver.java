@@ -20,7 +20,7 @@ public class ExceptionTestDriver {
 			doThingC();
 		} catch (MyException e) {
 			
-			throw new MyException("DID NOT REALLY WANT TO DEAL WITH IT", e);
+		throw new MyException("DID NOT REALLY WANT TO DEAL WITH IT", e);
 			
 		} finally {
 			System.out.println("finally we are doing it");
