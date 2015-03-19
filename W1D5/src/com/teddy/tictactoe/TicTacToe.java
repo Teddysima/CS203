@@ -7,6 +7,8 @@ public class TicTacToe {
 	
 	private int currentPlayer;
 	
+	public TicTacToe(){}
+	
 	public TicTacToe(int rows, int cols, String[] names){
 		this.board = new Board(rows, cols);
 		this.players = new Player[names.length];
@@ -41,7 +43,7 @@ public class TicTacToe {
 			board.print();
 			
 			if ( board.checkWin(pos) ){
-				System.out.println ("Viva " + this.players[ currentPlayer ].getName() );
+				System.out.println ("Viva " + this.players[ currentPlayer ].getName() + ", you won the game!!");
 				break;
 			} else if ( ! board.hasEmptySlot() ){
 				System.out.println ("This game sucks! It is a draw!");

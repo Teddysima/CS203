@@ -66,6 +66,7 @@ public class MyNotePad implements Serializable {
 			}
 		}
 	}
+  
 
 	private class LoadListener implements ActionListener, Serializable {
 

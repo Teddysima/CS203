@@ -75,7 +75,7 @@ public class Animation {
 			}
 		}
 
-		public void keyReleased1(KeyEvent ke) {
+		public void keyReleased(KeyEvent ke) {
 
 			if (ke.getKeyCode() == KeyEvent.VK_UP) {
 				up = false;
@@ -91,11 +91,6 @@ public class Animation {
 			}
 		}
 
-		@Override
-		public void keyReleased(KeyEvent e) {
-			// TODO Auto-generated method stub
-
-		}
 
 		@Override
 		public void keyTyped(KeyEvent e) {
@@ -103,6 +98,7 @@ public class Animation {
 
 		}
 
+	
 	}
 
 	public class DrawPanel extends JPanel {

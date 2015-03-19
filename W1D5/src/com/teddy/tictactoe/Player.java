@@ -15,8 +15,8 @@ public class Player {
 		int r, c;
 		
 		System.out.print("Player " + name + " enter position: ");
-		r = scanner.nextInt() - 1;
-		c = scanner.nextInt() - 1;
+		r = scanner.nextInt();
+		c = scanner.nextInt();
 		
 		Position pos = new Position(r, c);
 		
@@ -31,3 +31,4 @@ public class Player {
 		this.name = name;
 	}
 }
+

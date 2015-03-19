@@ -6,7 +6,7 @@ public class TicTacToeLauncher {
 
 	public static void main(String[] args) {
 		
-		TicTacToe game;
+		//TicTacToe game;
 		String[] names = new String[2];
 		Scanner scanner = new Scanner(System.in);
 		final int rows = 3;
@@ -18,7 +18,7 @@ public class TicTacToeLauncher {
 		System.out.print("Enter player #2 name: ");
 		names[1] = scanner.next();
 		
-		game = new TicTacToe(rows, cols, names);
+		TicTacToe game = new TicTacToe(rows, cols, names);
 		
 		game.play();
 	}
