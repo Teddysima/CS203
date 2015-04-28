@@ -49,7 +49,7 @@ public class Animation {
 				x += 1;
 			}
 			try {
-				Thread.sleep(10);
+				Thread.sleep(5);
 				frame.repaint();
 			} catch (Exception e) {
 			}
